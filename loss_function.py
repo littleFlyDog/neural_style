@@ -1,6 +1,6 @@
 import torch
 #损失函数定义
-content_weight, style_weight, tv_weight = 1, 1e4, 10
+content_weight, style_weight, tv_weight = 1, 1e4, 5
 def content_loss(Y_hat, Y):
     # 我们从动态计算梯度的树中分离目标：
     # 这是一个规定的值，而不是一个变量。
